@@ -3,7 +3,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Music App Pricing</title>
-        <script src="httpsL://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-gray-100">
         <main>
@@ -12,27 +12,49 @@
             >
                 Choose your listening plan
             </h1>
-            <div>
-                <div>
-                    <!-- Listener Package -->
-                    <div>
-                        <h2>Listener</h2>
-                        <p>
+
+            <!-- Pricing Cards wrapper -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-8 mt-16"
+            >
+                <!-- Listener Package -->
+                <div
+                    class="bg-gray-100 ring-1 ring-gray-300 grid grid-rows-[1fr_auto] rounded-xl p-8 gap-6"
+                >
+                    <div class="grid grid-rows-[auto_auto_auto_1fr] gap-y-2">
+                        <h2 class="text-lg font-semibold text-indigo-600">
+                            Listener
+                        </h2>
+                        <p class="text-4xl font-bold text-gray-900">
                             $0
-                            <span>/month</span>
+                            <span class="text-base font-medium text-gray-500"
+                                >/month</span
+                            >
                         </p>
-                        <p>
+                        <p class="text-gray-600">
                             Start exploring millions of songs with basic
                             features and ads.
                         </p>
-                        <ul>
+                        <ul class="mt-6 space-y-2 text-sm text-gray-700">
                             <li>
-                                <span>&#10003;</span> Ad-supported streaming
+                                <span class="text-green-700 mr-2" aria-hidden
+                                    >&#10003;</span
+                                >
+                                Ad-supported streaming
                             </li>
-                            <li><span>&#10003;</span> Curated playlists</li>
+                            <li>
+                                <span class="text-green-700 mr-2" aria-hidden
+                                    >&#10003;</span
+                                >
+                                Curated playlists
+                            </li>
                         </ul>
                     </div>
-                    <a href="#">Start listening</a>
+                    <a
+                        class="bg-indigo-100 px-4 py-2 text-center font-semibold text-indigo-700 hover:bg-indigo-200 block rounded-md"
+                        href="#"
+                        >Start listening</a
+                    >
                 </div>
 
                 <!-- Most Popular (Premium) Package -->
